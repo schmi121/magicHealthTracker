@@ -1,0 +1,65 @@
+.healthContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10%;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+button {
+    min-width: 60px;
+    max-width: 60px;
+    border-style: solid;
+    border-width: medium;
+    font-weight: bold;
+}
+
+#jordanHealth,
+#blakeHealth,
+#toneHealth,
+#dillonHealth,
+#willHealth,
+#paulHealth {
+    display: flex;
+    width: auto;
+    justify-content: center;
+    flex-direction: column;   
+    border-style: solid;
+    border-width: medium;
+    align-items: center;
+    margin: 1rem;
+}
+
+.lifeTotal {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#jordanHealth {
+    background-color: blue;
+}
+
+#blakeHealth {
+    background-color: crimson;
+}
+
+#toneHealth {
+    background-color: green;
+}
+
+#dillonHealth {
+    background-color: gold;
+}
+
+#willHealth {
+    background-color: purple;
+}
+
+#paulHealth {
+    background-color: salmon;
+}
