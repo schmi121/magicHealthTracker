@@ -8,6 +8,13 @@
     margin-right: 30%;
 }
 
+@media screen and (max-width: 824px) {
+    .healthContainer {
+      margin-left: 0%;
+      margin-right: 0%;
+    }
+  }
+
 button {
     min-width: 60px;
     max-width: 60px;
