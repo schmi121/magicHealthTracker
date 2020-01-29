@@ -1,37 +1,37 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-    const jordanIncButton = document.getElementById('jordanIncrementButton');
-    const blakeIncButton = document.getElementById('blakeIncrementButton');
-    const toneIncButton = document.getElementById('toneIncrementButton');
-    const dillonIncButton = document.getElementById('dillonIncrementButton');
-    const willIncButton = document.getElementById('willIncrementButton');
-    const paulIncButton = document.getElementById('paulIncrementButton');
+    const playerOneIncButton = document.getElementById('playerOneIncrementButton');
+    const playerTwoIncButton = document.getElementById('playerTwoIncrementButton');
+    const playerThreeIncButton = document.getElementById('playerThreeIncrementButton');
+    const playerFourIncButton = document.getElementById('playerFourIncrementButton');
+    const playerFiveIncButton = document.getElementById('playerFiveIncrementButton');
+    const playerSixIncButton = document.getElementById('playerSixIncrementButton');
 
-    const jordanDeButton = document.getElementById('jordanDecrementButton');
-    const blakeDeButton = document.getElementById('blakeDecrementButton');
-    const toneDeButton = document.getElementById('toneDecrementButton');
-    const dillonDeButton = document.getElementById('dillonDecrementButton');
-    const willDeButton = document.getElementById('willDecrementButton');
-    const paulDeButton = document.getElementById('paulDecrementButton');
+    const playerOneDeButton = document.getElementById('playerOneDecrementButton');
+    const playerTwoDeButton = document.getElementById('playerTwoDecrementButton');
+    const playerThreeDeButton = document.getElementById('playerThreeDecrementButton');
+    const playerFourDeButton = document.getElementById('playerFourDecrementButton');
+    const playerFiveDeButton = document.getElementById('playerFiveDecrementButton');
+    const playerSixDeButton = document.getElementById('playerSixDecrementButton');
 
-    const jordanIncFiveButton = document.getElementById('jordanIncrementFiveButton');
-    const blakeIncFiveButton = document.getElementById('blakeIncrementFiveButton');
-    const toneIncFiveButton = document.getElementById('toneIncrementFiveButton');
-    const dillonIncFiveButton = document.getElementById('dillonIncrementFiveButton');
-    const willIncFiveButton = document.getElementById('willIncrementFiveButton');
-    const paulIncFiveButton = document.getElementById('paulIncrementFiveButton');
+    const playerOneIncFiveButton = document.getElementById('playerOneIncrementFiveButton');
+    const playerTwoIncFiveButton = document.getElementById('playerTwoIncrementFiveButton');
+    const playerThreeIncFiveButton = document.getElementById('playerThreeIncrementFiveButton');
+    const playerFourIncFiveButton = document.getElementById('playerFourIncrementFiveButton');
+    const playerFiveIncFiveButton = document.getElementById('playerFiveIncrementFiveButton');
+    const playerSixIncFiveButton = document.getElementById('playerSixIncrementFiveButton');
 
-    const jordanDeFiveButton = document.getElementById('jordanDecrementFiveButton');
-    const blakeDeFiveButton = document.getElementById('blakeDecrementFiveButton');
-    const toneDeFiveButton = document.getElementById('toneDecrementFiveButton');
-    const dillonDeFiveButton = document.getElementById('dillonDecrementFiveButton');
-    const willDeFiveButton = document.getElementById('willDecrementFiveButton');
-    const paulDeFiveButton = document.getElementById('paulDecrementFiveButton');
+    const playerOneDeFiveButton = document.getElementById('playerOneDecrementFiveButton');
+    const playerTwoDeFiveButton = document.getElementById('playerTwoDecrementFiveButton');
+    const playerThreeDeFiveButton = document.getElementById('playerThreeDecrementFiveButton');
+    const playerFourDeFiveButton = document.getElementById('playerFourDecrementFiveButton');
+    const playerFiveDeFiveButton = document.getElementById('playerFiveDecrementFiveButton');
+    const playerSixDeFiveButton = document.getElementById('playerSixDecrementFiveButton');
 
-    const incBtnsArray = [jordanIncButton, blakeIncButton, toneIncButton, dillonIncButton, willIncButton, paulIncButton];
-    const deBtnsArray = [jordanDeButton, blakeDeButton, toneDeButton, dillonDeButton, willDeButton, paulDeButton];
-    const incFiveBtnsArray = [jordanIncFiveButton, blakeIncFiveButton, toneIncFiveButton, dillonIncFiveButton, willIncFiveButton, paulIncFiveButton];
-    const deFiveBtnsArray = [jordanDeFiveButton, blakeDeFiveButton, toneDeFiveButton, dillonDeFiveButton, willDeFiveButton, paulDeFiveButton];
+    const incBtnsArray = [playerOneIncButton, playerTwoIncButton, playerThreeIncButton, playerFourIncButton, playerFiveIncButton, playerSixIncButton];
+    const deBtnsArray = [playerOneDeButton, playerTwoDeButton, playerThreeDeButton, playerFourDeButton, playerFiveDeButton, playerSixDeButton];
+    const incFiveBtnsArray = [playerOneIncFiveButton, playerTwoIncFiveButton, playerThreeIncFiveButton, playerFourIncFiveButton, playerFiveIncFiveButton, playerSixIncFiveButton];
+    const deFiveBtnsArray = [playerOneDeFiveButton, playerTwoDeFiveButton, playerThreeDeFiveButton, playerFourDeFiveButton, playerFiveDeFiveButton, playerSixDeFiveButton];
 
     incBtnsArray.forEach(button => {
         button.addEventListener('click', e => {
@@ -87,5 +87,17 @@ document.addEventListener('DOMContentLoaded', function () {
     sixSidedButton.addEventListener('click', () => {
         dieRoll();
         alert (`The d6 rolls ${randomDieRoll}`)
+    });
+
+    const coinFlipButton = document.getElementById('coinFlip');
+    const coinFlipArray = ['Heads', 'Tails'];
+
+    function flipACoin() {
+        randomCoinFlip = coinFlipArray[Math.floor(Math.random() * coinFlipArray.length)];
+    }
+
+    coinFlipButton.addEventListener('click', () => {
+        flipACoin();
+        alert (`The coin lands on ${randomCoinFlip}`)
     });
 })

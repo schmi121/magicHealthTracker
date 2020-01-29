@@ -1,3 +1,7 @@
+body {
+    margin: 0px;
+}
+
 .cmdrTracker {
     font-size: 24px;
     font-weight: bolder;
@@ -18,7 +22,7 @@
     margin-right: 25%;
 }
 
-#playerOrderButton, #sixSidedDie {
+#playerOrderButton, #sixSidedDie, #coinFlip {
     display: flex;
     width: 200px !important;
     justify-content: center;
@@ -34,7 +38,6 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 3%;
     margin-left: 25%;
     margin-right: 25%;
 }
@@ -46,13 +49,6 @@
     }
   }
 
-@media screen and (min-width: 700px) {
-    .healthContainer {
-      margin-left: 10%;
-      margin-right: 10%;
-    }
-  }
-
 button {
     min-width: 60px;
     max-width: 60px;
@@ -61,12 +57,12 @@ button {
     font-weight: bold;
 }
 
-#jordanHealth,
-#blakeHealth,
-#toneHealth,
-#dillonHealth,
-#willHealth,
-#paulHealth {
+#playerOneHealth,
+#playerTwoHealth,
+#playerThreeHealth,
+#playerFourHealth,
+#playerFiveHealth,
+#playerSixHealth {
     display: flex;
     width: auto;
     justify-content: center;
@@ -85,26 +81,26 @@ button {
     font-weight: bold;
 }
 
-#jordanHealth {
-    background-color: blue;
+#playerOneHealth {
+    background-color: cyan;
 }
 
-#blakeHealth {
+#playerTwoHealth {
     background-color: crimson;
 }
 
-#toneHealth {
-    background-color: green;
+#playerThreeHealth {
+    background-color: lightgreen;
 }
 
-#dillonHealth {
+#playerFourHealth {
     background-color: gold;
 }
 
-#willHealth {
+#playerFiveHealth {
     background-color: violet;
 }
 
-#paulHealth {
+#playerSixHealth {
     background-color: salmon;
 }
