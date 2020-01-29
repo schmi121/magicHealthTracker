@@ -1,14 +1,45 @@
+.cmdrTracker {
+    font-size: 24px;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+#playerButtonContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 3%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+#playerOrderButton, #sixSidedDie {
+    display: flex;
+    width: 200px !important;
+    justify-content: center;
+    flex-direction: column;   
+    border-style: solid;
+    border-width: medium;
+    align-items: center;
+    margin: 1rem;
+}
+
 .healthContainer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 10%;
+    margin-top: 3%;
     margin-left: 25%;
     margin-right: 25%;
 }
 
-@media screen and (max-width: 824px) {
+@media screen and (max-width: 700px) {
     .healthContainer {
       margin-left: 0%;
       margin-right: 0%;
@@ -69,25 +100,4 @@ button {
 
 #paulHealth {
     background-color: salmon;
-}
-
-#playerButtonContainer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 5%;
-    margin-left: 25%;
-    margin-right: 25%;
-}
-
-#playerOrderButton, #sixSidedDie {
-    display: flex;
-    width: 100px !important;
-    justify-content: center;
-    flex-direction: column;   
-    border-style: solid;
-    border-width: medium;
-    align-items: center;
-    margin: 1rem;
 }
