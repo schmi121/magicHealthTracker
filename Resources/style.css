@@ -70,3 +70,24 @@ button {
 #paulHealth {
     background-color: salmon;
 }
+
+#playerButtonContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 5%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+#playerOrderButton, #sixSidedDie {
+    display: flex;
+    width: 100px !important;
+    justify-content: center;
+    flex-direction: column;   
+    border-style: solid;
+    border-width: medium;
+    align-items: center;
+    margin: 1rem;
+}

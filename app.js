@@ -64,4 +64,28 @@ document.addEventListener('DOMContentLoaded', function () {
             e.srcElement.parentNode.parentNode.childNodes[1].innerHTML = `<p>${currentHealth.toString()}</p>`;
         })
     })
+
+    const playerOrderButton = document.getElementById('playerOrderButton');
+    const playerOrder = ['Blue', 'Red', 'Green', 'Yellow', 'Pink', 'Salmon'];
+
+    function firstPlayer() {
+        randomPlayerOrder = playerOrder[Math.floor(Math.random() * playerOrder.length)];
+    }
+
+    playerOrderButton.addEventListener('click', () => {
+        firstPlayer();
+        alert (`${randomPlayerOrder} player goes first`)
+    });
+
+    const sixSidedButton = document.getElementById('sixSidedDie');
+    const sixSidedDieArray = ['1', '2', '3', '4', '5', '6'];
+
+    function dieRoll() {
+        randomDieRoll = sixSidedDieArray[Math.floor(Math.random() * sixSidedDieArray.length)];
+    }
+
+    sixSidedButton.addEventListener('click', () => {
+        dieRoll();
+        alert (`The d6 rolls ${randomDieRoll}`)
+    });
 })
